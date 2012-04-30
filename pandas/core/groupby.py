@@ -13,6 +13,7 @@ import pandas.core.algorithms as algos
 import pandas.core.common as com
 import pandas._tseries as lib
 
+from pandas.util.py3compat import xrange
 
 class GroupByError(Exception):
     pass

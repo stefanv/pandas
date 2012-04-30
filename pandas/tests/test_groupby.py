@@ -20,6 +20,7 @@ import pandas.core.datetools as dt
 import numpy as np
 
 import pandas.util.testing as tm
+from pandas.util.py3compat import xrange
 
 def commonSetUp(self):
     self.dateRange = bdate_range('1/1/2005', periods=250)

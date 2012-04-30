@@ -19,6 +19,8 @@ import pandas.stats.common as scom
 import pandas.stats.math as math
 import pandas.stats.moments as moments
 
+from pandas.util.py3compat import xrange
+
 _FP_ERR = 1e-8
 
 class OLS(object):

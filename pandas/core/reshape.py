@@ -12,6 +12,7 @@ from pandas.core.common import notnull, _ensure_platform_int
 from pandas.core.groupby import get_group_index
 from pandas.core.index import MultiIndex
 
+from pandas.util.py3compat import xrange
 
 class ReshapeError(Exception):
     pass

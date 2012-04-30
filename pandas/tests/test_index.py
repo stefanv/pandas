@@ -17,6 +17,8 @@ import pandas.util.testing as tm
 
 from pandas.tseries.index import _to_m8
 
+from pandas.util.py3compat import xrange
+
 class TestIndex(unittest.TestCase):
 
     def setUp(self):

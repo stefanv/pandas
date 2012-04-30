@@ -7,6 +7,8 @@ from pandas.tools.merge import concat
 from pandas.tools.pivot import pivot_table, crosstab
 import pandas.util.testing as tm
 
+from pandas.util.py3compat import xrange
+
 class TestPivotTable(unittest.TestCase):
 
     def setUp(self):

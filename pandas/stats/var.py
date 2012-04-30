@@ -10,6 +10,8 @@ import pandas.stats.common as common
 from pandas.stats.math import inv
 from pandas.stats.ols import _combine_rhs
 
+from pandas.util.py3compat import xrange
+
 class VAR(object):
     """
     Estimates VAR(p) regression on multivariate time series data

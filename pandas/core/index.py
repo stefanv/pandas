@@ -13,6 +13,7 @@ import pandas.core.common as com
 import pandas._tseries as lib
 import pandas._engines as _gin
 
+from pandas.util.py3compat import xrange
 
 __all__ = ['Index']
 

@@ -6,6 +6,8 @@ from __future__ import division
 import numpy as np
 import numpy.linalg as linalg
 
+from pandas.util.py3compat import xrange
+
 def rank(X, cond=1.0e-12):
     """
     Return the rank of a matrix X based on its generalized inverse,

@@ -4,6 +4,7 @@ Shipping functions from SciPy to reduce dependency on having SciPy installed
 
 import numpy as np
 
+from pandas.util.py3compat import xrange
 
 def scoreatpercentile(a, per, limit=(), interpolation_method='fraction'):
     """

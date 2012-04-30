@@ -21,6 +21,7 @@ from pandas._tseries import Timestamp
 
 from numpy.testing.decorators import slow
 
+from pandas.util.py3compat import xrange
 
 class TestParsers(unittest.TestCase):
     data1 = """index,A,B,C,D

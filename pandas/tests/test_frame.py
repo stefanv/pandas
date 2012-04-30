@@ -30,6 +30,7 @@ from pandas.util.testing import (assert_almost_equal,
 
 import pandas.util.testing as tm
 import pandas._tseries as lib
+from pandas.util.py3compat import xrange
 
 #-------------------------------------------------------------------------------
 # DataFrame test cases

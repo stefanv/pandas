@@ -11,6 +11,8 @@ from dateutil.relativedelta import relativedelta
 from pandas._tseries import Timestamp
 import pandas._tseries as lib
 
+from pandas.util.py3compat import xrange
+
 #----------------------------------------------------------------------
 # DateOffset
 

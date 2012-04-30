@@ -22,6 +22,8 @@ import pandas.core.common as com
 import pandas._tseries as lib
 from contextlib import contextmanager
 
+from pandas.util.py3compat import xrange
+
 # reading and writing the full object in one go
 _TYPE_MAP = {
     Series     : 'series',

@@ -22,10 +22,15 @@ else:
 try:
     from cStringIO import StringIO
 except:
-    from io import StringIO
+    from io import StringIO # no cStringIO in py3
 
 try:
     from io import BytesIO
 except:
-    from cStringIO import StringIO as BytesIO
+    from cStringIO import StringIO as BytesIO # no BytesIO prior to py3
+
+try:
+    xrange = xrange
+except NameError: # no xrange in py3
+    xrange = range
 

@@ -6,6 +6,8 @@ from pandas.core.api import Series, DataFrame
 import pandas.stats.common as common
 from pandas.util.decorators import cache_readonly
 
+from pandas.util.py3compat import xrange
+
 def fama_macbeth(**kwargs):
     """Runs Fama-MacBeth regression.
 

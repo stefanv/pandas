@@ -22,7 +22,7 @@ from pandas import bdate_range
 from pandas.tseries.index import DatetimeIndex
 from pandas.tseries.period import PeriodIndex
 from pandas.tseries.interval import IntervalIndex
-
+from pandas.util.py3compat import xrange
 
 Index = index.Index
 Series = series.Series

@@ -23,6 +23,7 @@ import pandas._tseries as lib
 from pandas.util import py3compat
 
 from pandas.util.decorators import Appender
+from pandas.util.py3compat import xrange
 
 _parser_params = """Also supports optionally iterating or breaking of the file
 into chunks.
@@ -768,7 +769,7 @@ class FixedWidthReader(object):
         # Note: 'colspecs' is a sequence of half-open intervals.
         return [line[fromm:to].strip(self.filler or ' ')
                 for (fromm, to) in self.colspecs]
-    
+
     # Iterator protocol in Python 3 uses __next__()
     __next__ = next
 

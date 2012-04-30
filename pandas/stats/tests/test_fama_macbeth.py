@@ -4,6 +4,8 @@ from common import assert_almost_equal, BaseTest
 
 import numpy as np
 
+from pandas.util.py3compat import xrange
+
 class TestFamaMacBeth(BaseTest):
     def testFamaMacBethRolling(self):
         # self.checkFamaMacBethExtended('rolling', self.panel_x, self.panel_y,

@@ -7,7 +7,7 @@ from pandas.tseries.offsets import DateOffset
 from pandas.util.decorators import cache_readonly
 import pandas.tseries.offsets as offsets
 import pandas._tseries as lib
-
+from pandas.util.py3compat import xrange
 
 def get_freq_code(freqstr):
     """
